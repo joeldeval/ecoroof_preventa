@@ -41,6 +41,8 @@
         </style>
     </head>
     <body>
+        
+
         <div class="container">
             <div class="content">
                 <img src='http://ecoroof.com.mx/images/logo.jpg'>
@@ -49,6 +51,9 @@
                 </h1>
                 <h3>adquiere a precio preferencial tu Eco Roof</h3>
                 <br>
+                @if(Auth::check())
+                    <a href="/auth/logout" class="btn btn-primary">Cerrar sesion admin</a>
+                @endif
                 <br>
                 <form method="POST" action="/prevent/register">
                     {!! csrf_field() !!}
