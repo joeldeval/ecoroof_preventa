@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -19,6 +19,10 @@ class Prevent extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'phone', 'howMany'];
+    protected $fillable = ['name', 'email', 'phone', 'howMany', 'idCampaign'];
 
+    public function campaign()
+    {
+        return  $this->belongsTo(\App\Models\CCampaign::class, 'idCampaign');
+    }
 }

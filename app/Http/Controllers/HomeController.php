@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Prevent;
+use App\Models\Prevent;
+use App\Models\CCampaign;
 
 class HomeController extends Controller
 {
@@ -20,7 +21,6 @@ class HomeController extends Controller
     public function index() 
     {
         $clients = Prevent::all();
-
         return view('dashboard', compact('clients'));
     }
 }

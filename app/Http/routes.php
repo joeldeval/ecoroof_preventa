@@ -1,4 +1,5 @@
 <?php
+use App\Models\CCampaign;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,9 +13,18 @@
 */
 
 Route::get('/', function () {
-    return view('prevent');
+    
+    $campaign = CCampaign::all();
+
+    return view('prevent', compact('campaign'));
 });
 
+
+Route::get('/password/{pass}', function ($pass) {
+    return bcrypt($pass);
+});
+
+// Route::get('/', 'Prevent\IndexController@get');
 Route::post('/prevent/register', 'Prevent\RegisterController@register');
 
 Route::get('auth/login', 'Auth\AuthController@getLogin');

@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" >
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.bootstrap.min.css" >
 <!-- Custom styles for this template -->
+<link rel="shortcut icon" type="image/x-icon" href="http://www.ecoroof.com.mx/images/logo.ico" />
 <style>
     html,
 body {
@@ -17,8 +18,8 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
+  /* display: -ms-flexbox; */
+  /* display: flex; */
   -ms-flex-align: center;
   align-items: center;
   padding-top: 40px;

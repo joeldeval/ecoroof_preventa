@@ -2,9 +2,8 @@
 <html>
     <head>
         <title>Ecoroof</title>
-
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+        <link rel="shortcut icon" type="image/x-icon" href="http://ecoroof.com.mx/images/logo.ico" />
         <style>
             html, body {
                 height: 100%;
@@ -32,6 +31,10 @@
 
             .title {
                 font-size: 50px;
+                font-weight: bold;
+            }
+            p{
+                    font-weight: bold;
             }
             img{
                 height: 300px;
@@ -42,15 +45,17 @@
         <div class="container">
             <div class="content">
                 <img src='http://ecoroof.com.mx/images/logo.jpg'>
-                <div class="title">Gracias por registrarte en nuestra preventa</div>
+                <div class="title">Gracias por registrarte en nuestra preventa.</div>
+                <p>
+                    Nos comunicaremos contigo
+                </p>
             </div>
         </div>
         <script>
-            setTimeout(() => redirectPage(), 2000);
+            // setTimeout(() => redirectPage(), 5000);
             
             function redirectPage(){
-                console.log('dasdsa')
-                window.location.href = 'https://www.facebook.com/EcoRoofmx/';
+                window.location.href = 'https://www.ecoroof.com.mx';
             }
         </script>
     </body>

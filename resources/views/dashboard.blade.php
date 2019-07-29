@@ -9,6 +9,7 @@
                 <th>Telefono</th>
                 <th>Correo</th>
                 <th>Metros cuadrados</th>
+                <th>Se enteró</th>
             </tr>
         </thead>
         <tbody>
@@ -18,10 +19,9 @@
                 <td>{{ $client->phone }}</td>
                 <td>{{ $client->email }}</td>
                 <td>{{ $client->howMany }}</td>
+                <td>{{ $client->campaign->name }}</td>
             </tr>
             @endforeach
-                
-            
         </tbody>
         <tfoot>
             <tr>
